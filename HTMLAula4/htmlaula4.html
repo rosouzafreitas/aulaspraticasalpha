@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesquisabncc</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            margin-top: 50px;
+        }
+        h1, h2, p, form{
+            margin: 0 auto;
+            text-align: center;
+        }
+        b{
+            color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: darkslateblue;">Pesquisa Nova BNCC</h1><br/>
+    <p style="width: 500px;">Olá! estamos fazendo uma pesquisa para a elaboração da nova <b>Base Nacional Comum Curricular</b>, para o <b>Novo Ensino Médio</b>, por favor preencha o formulário com seu nome, e-mail e sua matéria preferida, obrigado!</p><br />
+    <form>
+        <label for="Name">Nome Completo</label><br />
+        <input type="text" name="user_name" id="Name" ><br />
+        <label for="Email">E-mail</label><br />
+        <input type="email" name="email" id="Email"><br /><br />
+        <p>Qual sua matéria preferida?</p><br />
+        <input type="radio" id="Math" name="fav_subject" value="Matemática" />
+        <label for="Math">Matemática</label><br />
+        <input type="radio" id="Portuguese" name="fav_subject" value="Português">
+        <label for="Portuguese">Português</label><br />
+        <input type="radio" id="Biology" name="fav_subject" value="Biologia">
+        <label for="Biology">Biologia</label><br />
+        <input type="radio" id="Physics" name="fav_subject" value="Física">
+        <label for="Physics">Física</label><br />
+        <input type="radio" id="Chemistry" name="fav_subject" value="Química">
+        <label for="Chemistry">Química</label><br />
+        <input type="radio" id="History" name="fav_subject" value="História">
+        <label for="History">História</label><br />
+        <input type="radio" id="Geography" name="fav_subject" value="Geografia">
+        <label for="Geography">Geography</label><br />
+        <input type="radio" id="English" name="fav_subject" value="Inglês">
+        <label for="English">Inglês</label><br /><br />
+        <button type="reset">Enviar (Para fins de teste está resetando!)</button>
+    </form>
+</body>
+</html>
