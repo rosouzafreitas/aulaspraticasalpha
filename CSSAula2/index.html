@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeletoresCSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        } /*seletor universal*/
+        header {
+            background-color: lavender;
+        } /*elemento*/
+        header h1 {
+            color: green;
+            font-size: 300%;
+        } /*seletores combinados*/
+        article h1 {
+            color: black;
+        } /*seletores combinados*/
+        h1 {
+            color: red;
+        } /*elemento*/
+        .description {
+            font-weight: bold;
+        } /*seletor de classe*/
+        a {
+            font-size: 120%;
+            color: blue;
+        } /*seletor de elemento*/
+        a[class="source"]:hover {
+            color: hotpink;
+        } /*seletores de atributo e de pseudo-classe*/
+        article {
+            background-color: lavender;
+        } /*elemento*/
+        
+        article p::first-letter {
+            font-size: 150%;
+            font-weight: bold;
+            font-family: Vivaldi;
+        } /*seletores combinados e pseudo-elemento */
+        p#lastline {
+            color: lavender;
+        } /*seletor de id*/
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        } /*seletor de elemento */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notícias do Jornal de Amanhã</h1>
+    </header>
+    <br />
+    <h1>O AMOR ESTÁ NO AR</h1><br />
+    <article>
+        <h1>Estamos em Outubro, mas no futuro será Dia dos Namorados!</h1><br />
+        <p>O futuro reserva muitas coisas à nós do presente, segundo nossos melhores
+            informantes, INFINITAS coisas! Na verdade isto é bem lógico tendo em vista
+            que tudo que não foi será, mas será que isto é verdade?! Segundo a teoria
+            do Big Bang, tudo que hoje existe no universo, já existia no momento da
+            explosão! Mas então como podemos viver no hoje e não no futuro de forma
+            a hoje ser dia dos namorados? Apesar de que se fosse, não estaríamos no
+            futuro e sim no presente... Ah vaidade de carne e osso chamada homem! Deixo
+            o resto desta discussão à meus caros físicos brasileiros, adeus, caros
+            hominídeos!
+        </p><br />
+        <a class="source" href="http://www.sbfisica.org.br/v1/home/index.php/pt/" target="_blank" rel="noopener noreferrer">A quem fazer estas e outras perguntas</a>
+        <p id="lastline">a</p>
+    </article>
+</body>
+</html>
