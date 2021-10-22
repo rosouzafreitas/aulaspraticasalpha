@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioAula5</title>
+    <style>
+        h1{
+            color: black;
+            border: black;
+            border-style: dashed;
+
+        }
+        body {
+            background-color: blanchedalmond;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 1ch;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://alphalumen.org.br/" target="_blank"><img src="https://alphalumen.org.br/wp-content/uploads/2020/06/alphalumen-instituto.png" style="filter: invert(); width: 100px; height: auto;" /></a>
+    <h1>Crie sua conta no Portal Alpha Lumen!</h1>
+    <form>
+        <fieldset>
+        <label for="Name"><b>Nome Completo</b></label><br />
+        <input type="text" name="formulario" id="Name" /><br />
+        <label for="User"><b>Usuário</b></label><br />
+        <input type="text" name="formulario" id="User" /><br />
+        <label for="Password"><b>Senha</b></label><br />
+        <input type="password" name="formulario" id="Password" /><br />
+        <label for="Email"><b>E-mail</b></label><br />
+        <input type="email" name="formulario" id="Email" /><br />
+        <label for="Bday"><b>Data de Nascimento</b></label><br />
+        <input type="date" name="formulario" id="Bday" /><br />
+        </fieldset>
+        <fieldset>
+        <h3>Qual seu interesse no Portal?</h3>
+        <input type="radio" name="radios" id="PE" />
+        <label for="PE">Projeto Escola</label><br />
+        <input type="radio" name="radios" id="OBT" />
+        <label for="OBT">Olimpíada Brasileira de Tecnologia</label><br />
+        <input type="radio" name="radios" id="Edtech" />
+        <label for="Edtech">Alpha Edtech</label><br />
+        </fieldset>
+        <fieldset>
+        <h3>Com qual(s) linguagem(s) de programação você teve contato?</h3>
+        <input type="checkbox" name="linguagem" id="Python" />
+        <label for="Python">Python</label>
+        <input type="checkbox" name="linguagem" id="JavaScript" />
+        <label for="JavaScript">JavaScript</label>
+        <input type="checkbox" name="linguagem" id="cplusplus" />
+        <label for="cplusplus">C++</label>
+        <input type="checkbox" name="linguagem" id="Java" />
+        <label for="Java">Java</label>
+        <input type="checkbox" name="linguagem" id="Portugol" />
+        <label for="Portugol">Portugal</label>
+        <input type="checkbox" name="linguagem" id="NDA" />
+        <label for="NDA">Nunca tive contato</label>
+        </fieldset>
+        <fieldset>
+        <h3>Em uma escala de 0 a 10, qual seu interesse em aprender programação?</h3>
+        <label for="Range">0 1 2 3 4 5 6 7 8 9 10</label><br />
+        <input type="range" name="_range" min="0" max="10" id="Range" /><br /><br />
+        </fieldset>
+        <br />
+        <input type="reset" value="Limpar" />
+        <input type="submit" value="Enviar" /><br /><br />
+    </form>
+</body>
+</html>
