@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Caixas e Bordas</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            background-color: blanchedalmond;
+        }
+        .solid {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            color: white;
+            float: left;
+        }
+        .transparent {
+            background-color: red;
+            opacity: 50%;
+            width: 200px;
+            height: 200px;
+            float: left;
+            color: white;
+        }
+        .gradient {
+            background-image: linear-gradient(90deg, black 20%, indianred 80%);
+            width: 200px;
+            height: 200px;
+            color: white;
+            float: left;
+        }
+        .img {
+            background-image: url(http://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png);
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            color: white;
+            float: left;
+            font-weight: bold;
+        }
+        .star {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/1024px-FA_star.svg.png);
+            width: 200px;
+            height: 200px;
+            background-repeat: repeat;
+            background-position: center;
+            background-size: 10%;
+            display: table;
+        }
+        .bordertype {
+            width: 200px;
+            height: 200px;
+            float: left;
+            border-style: dotted;
+            border-color: red;
+        }
+        .borderradius {
+            width: 200px;
+            height: 200px;
+            float: left;
+            border: 5px solid green;
+            border-radius: 30px;
+        }
+        .boxshadow {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            border: 1px solid black;
+            float: left;
+            background-image: url(http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K9860747Y5);
+            background-size: 100%;
+            box-shadow: 10px 10px 5px indianred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Backgrounds</h1>
+    <div class="solid">O background desta caixa é uma cor sólida (green)</div>
+    <div class="transparent">O background desta é uma cor sólida (vermelho) com transparência</div>
+    <div class="gradient">Esta tem um fundo gradiente (90deg, black 20%, indianred 80%)</div>
+    <div class="img">Esta tem um fundo de imagem única</div>
+    <div class="star">Esta tem o fundo de uma imagem repetida várias vezes</div>
+    <h1>Borders</h1>
+    <div class="bordertype">Esta caixa tem uma borda vermelha e pontilhada</div>
+    <div class="borderradius">Esta caixa tem a borda arredondada, com 5 pixels de espessura</div>
+    <div class="boxshadow"></div>
+    <p>A caixa ao lado utiliza sombreamento (box-shadow)</p>
+</body>
+</html>
