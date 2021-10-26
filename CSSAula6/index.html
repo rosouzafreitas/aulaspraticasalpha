@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FontStyles</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zen+Kurenaido">
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        h2 {
+            color: blueviolet;
+            margin-left: 5%;
+            font-family: 'Zen Kurenaido';
+        }
+        ul {
+            list-style-type: upper-roman;
+            font-weight: bold;
+            font-size: 15px;
+            list-style-position: inside;
+            font-family: 'Zen Kurenaido';
+        }
+        li {
+            line-height: 1.5;
+        }
+        button {
+            background-color: blanchedalmond;
+            color: black;
+            border-radius: 50%;
+            margin-left: 5%;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+        }
+        a:link {
+            color: blueviolet;
+        }
+        a:visited {
+            color: lightseagreen;
+        }
+        a:focus {
+            border-bottom: 1px solid;
+            background: lightcyan;
+        }
+        a:hover {
+            border-bottom: 1px solid;
+            background: lightskyblue;
+        }
+        a:active {
+            background:lightslategray;
+            color: lightsteelblue;
+        }
+        @font-face {
+            font-family: 'candycane';
+            src:url('fonts/woff.woff') format('woff'),
+                url('fonts/woff2.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .woff {
+            font-family: candycane;
+            font-size: 30px;
+            margin-left: 5%;
+        }
+        .google {
+            font-family: 'Zen Kurenaido';
+            font-size: 20px;
+            margin-left: 5%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista de compras (estilizada para quem nunca viu legumes)</h2>
+    <form>
+    <ul>
+        <li>Tomate <input type="checkbox" name="tomate" /></li>
+        <li>Pimentão <input type="checkbox" name="pimentao" /></li>
+        <li>Alface <input type="checkbox" name="alface" /></li>
+        <li>Carne de Hamburguer <input type="checkbox" name="hamburguer" /></li>
+        <li>Cerveja <input type="checkbox" name="cerveja" /></li>
+        <li>Biscoito (bolacha?)<input type="checkbox" name="biscoito" /></li>
+        <li>Sargadin <input type="checkbox" name="salgado" /></li>
+    </ul>
+    <button type="submit">Finalizada!</button>
+    </form>
+    <ul>
+        <li>
+        <a href="https://www.google.com/search?q=tomate&tbm=isch&ved=2ahUKEwir2_zdjOnzAhX4vJUCHU3GCBcQ2-cCegQIABAA&oq=tomate&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIICAAQgAQQsQMyBwgAELEDEEMyCAgAEIAEELEDMgcIABCxAxBDMgQIABBDMgUIABCABDIICAAQgAQQsQMyBQgAEIAEMgQIABBDOgcIIxDvAxAnOgsIABCABBCxAxCDAVCT1x1YhNsdYJbcHWgAcAB4AIABqQGIAZ8HkgEDMC42mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=rn14YavMG_j51sQPzYyjuAE&bih=609&biw=1280" target="_blank" rel="noopener noreferrer">Exemplo de tomate bom</a>
+        </li>
+        <li>
+        <a href="https://www.google.com/search?q=piment%C3%A3o&sxsrf=AOaemvJiJGi0ZyB81bS35s5SHu1YtvnULg:1635286442735&source=lnms&tbm=isch&sa=X&sqi=2&ved=2ahUKEwiH-5jcjOnzAhWZq5UCHV5VBXEQ_AUoAXoECAEQAw&biw=1280&bih=609&dpr=1.5" target="_blank">Exemplo de pimentão bom</a>
+        </li>
+        <li>
+        <a href="https://www.google.com/search?q=alface&sxsrf=AOaemvIxrpAYvSJ-TIOWd7_mKeoRY9yJ3A:1635287011323&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjB26jrjunzAhXGrpUCHbucCScQ_AUoAXoECAEQAw&biw=1280&bih=609&dpr=1.5" target="_blank" rel="noopener noreferrer">Exemplo de alface bom</a>
+        </li>
+    </ul>
+    <p class="woff">Este parágrafo utiliza fontes no formato WOFF, a fonte se chama Candycane</p>
+    <p class="google">Já este utiliza uma fonte do Google Fonts, chamada Zen Kurenaido (também utilizada na lista de compras!)</p>
+</body>
+</html>
