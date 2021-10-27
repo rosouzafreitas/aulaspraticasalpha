@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoresCSS</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        div {
+            background-color: blanchedalmond;
+            border: 3px solid #000000;
+        }
+        .hex {
+            background-color: #000000;
+            color: #2D8CFF;
+        }
+        .hextransp {
+            background-color: #000000;
+            color: #2D8CFF90;
+        }
+        .rgb {
+            background-color: #000000;
+            color: rgb(214, 64, 202);
+        }
+        .rgba {
+            background-color: #000000;
+            color: rgb(214, 64, 202, 0.75);
+        }
+        .hsl {
+            background-color: #000000;
+            color: hsl(0, 80%, 50%);
+        }
+        .hsla {
+            background-color: #000000;
+            color: hsla(0, 80%, 50%, 0.8);
+        }
+        .default {
+            background-color: #FFFFFF;
+        }
+        span {
+            color: blanchedalmond;
+        }
+        .currentcolor {
+            background-color: #000000;
+            color: inherit;
+        }
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudo das cores em CSS</h1>
+    <div>
+        <p class="hex">Este parágrafo foi colorido usando a cor hexadecimal #2D8CFF e um fundo preto #000000</p>
+        <p class="hextransp">Este utiliza as mesmas cores que o anterior, porém com 90% de opacidade (#2D8CFF90)</p>
+        <p class="rgb">Este utiliza a cor RGB(214, 64, 202)</p>
+        <p class="rgba">Este utiliza a mesma cor RGB que o anterior, porém com opacidade (a) definido para 75% (RGB(214, 64, 202, 0.75))</p>
+        <p class="hsl">Já este, utiliza coloração por HSL(0, 80%, 50%)</p>
+        <p class="hsla">Este utiliza a mesma cor que o anterior, porém com o valor alpha (transparência) definido para 0.8 (80%)</p>
+        <p class="default">Este não teve sua cor de texto definida, portanto terá a cor padrão do navegador, no caso, preto #000000, o fundo do parágrafo foi definido como #FFFFFF para possibilitar a visualização do texto</p>
+        <span>
+            <p class="currentcolor">Este herda sua cor do &lt;span&gt; pai onde está inserido, no caso, "blanchedalmond". Seu color está definido para "inherit"</p>
+        </span>
+    </div>
+</body>
+</html>
