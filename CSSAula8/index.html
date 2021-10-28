@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        .image-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: hsl(0, 100%, 0%);
+        }
+        img {
+            width: 10%;
+            height: auto;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            background-color: hsl(0, 100%, 0%);
+            color: hsl(0, 100%, 50%);
+            height: 50px;
+        }
+        .vertical {
+            display: flex;
+            flex-direction: column;
+            background-color: hsl(0, 100%, 0%);
+            color: white;
+        }
+        .horizontal {
+            display: flex;
+            flex-direction: row;
+            background-color: hsl(0, 100%, 0%);
+            color: white;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Star-.svg" alt="">
+    </div><br />
+    <div class="center">
+        <p>Este parágrafo está em uma div com um display flex centralizado</p>
+    </div><br />
+    <div class="vertical">
+        <p>estes</p>
+        <p>estão</p>
+        <p>na</p>
+        <p>vertical</p>
+    </div><br />
+    <div class="horizontal">
+        <p>já</p>
+        <p>estes</p>
+        <p>estão</p>
+        <p>na</p>
+        <p>horizontal</p>
+    </div>
+</body>
+</html>
