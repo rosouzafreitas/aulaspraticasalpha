@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBoxWrap</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        h1 {
+            margin: auto;
+            text-align: center;
+            height: 50px;
+        }
+        .frame {
+            background-color: black;
+            width: 350px;
+            height: 500px;
+            border-radius: 25%;
+            position: relative;
+            margin: auto;
+        }
+        .screen {
+            display: flex;
+            width: 300px;
+            height: 100px;
+            background-color: rgb(56, 49, 150);
+            color: hsl(0, 0%, 100%);
+            position: absolute;
+            left: 25px;
+            top: 50px;
+            border-radius: 25%;
+        }
+        .screen>* {
+            width: 300px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .operators {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 300px;
+            position: absolute;
+            left: 25px;
+            bottom: 300px;
+        }
+        .operators>* {
+            background-color: hsl(0, 0%, 0%);
+            color: hsl(0, 0%, 100%);
+            flex: 1 1 50px;
+            border: 1px solid hsl(0, 0%, 100%);
+            font-size: 20px;
+        }
+        .keyboard {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 300px;
+            position: absolute;
+            bottom: 50px;
+            left: 25px;
+        }
+        .keyboard>* {
+            background-color: hsl(0, 0%, 0%);
+            color: hsl(0, 0%, 100%);
+            flex: 1 1 100px;
+            border: 1px solid hsl(0, 0%, 100%);
+            border-radius: 50%;
+            height: 50px;
+            vertical-align: middle;
+            line-height: 50px;
+            text-align: center;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+        #zero {
+            border-radius: 25%;
+        }
+        button:hover {
+            background-color: hsl(300, 81%, 58%);
+            cursor: pointer;
+        }
+        button:active {
+            background-color: rgb(117, 25, 136);
+        }
+    </style>
+</head>
+<body>
+    <h1>A fantástica calculadora (ainda) não funcional!</h1>
+    <div class="frame">
+        <div class="screen">
+            <div>
+                Hello World!
+            </div>
+        </div>
+        <div class="operators">
+            <button>+</button>
+            <button>-</button>
+            <button>x</button>
+            <button>/</button>
+        </div>
+        <div class="keyboard">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button id="zero">0</button>
+        </div>
+    </div>
+</body>
+</html>
