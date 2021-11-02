@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
 }
 body{
     background-color: black;
@@ -24,7 +24,7 @@ header {
     height: auto;
     border-radius: 100%;
     border-style: dashed;
-    display: block;
+    display: flex;
     margin: auto;
 }
 header:hover {
@@ -40,9 +40,7 @@ header:hover {
     justify-content: center;
 }
 .topnav a {
-    float: left;
     border: 1px solid rgb(20, 100, 38);
-    justify-content: center;
 }
 .topnav input[type=text] {
     float: right;
