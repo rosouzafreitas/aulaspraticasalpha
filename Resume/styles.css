@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+body{
+    background-color: black;
+}
+header {
+    background-color: black;
+    color: rgb(20, 100, 38);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'American Typewriter', serif;
+    padding-left: 10px;
+    font-style: oblique;
+    font-variant: small-caps;
+    position: sticky;
+    margin: auto;
+    text-align: center;
+}
+.profpic {
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+    border-style: dashed;
+    display: block;
+    margin: auto;
+}
+header:hover {
+    color: lightgreen;
+}
+.topnav{
+    padding-left: 0;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
+}
+.topnav a {
+    float: left;
+    border: 1px solid rgb(20, 100, 38);
+    margin-right: 5px;
+    flex-wrap: wrap;
+}
+.topnav input[type=text] {
+    float: right;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    color: rgb(20, 100, 38);
+    border: 1px solid rgb(20, 100, 38);
+}
+.topnav input::placeholder {
+    color: rgb(20, 100, 38);
+}
+.topnav input[type=submit]{
+    float: right;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    color: rgb(20, 100, 38);
+    border: 1px solid rgb(20, 100, 38);
+}
+button {
+    margin-left: 0;
+    background: black;
+    color: rgb(20, 100, 38);
+    border: 1px solid rgb(20, 100, 38);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+}
+button:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+article a {
+    color: white;
+}
+article a:hover {
+    color: hotpink;
+}
+article {
+    background-color: rgb(20, 100, 38);
+    color: white;
+    font-size: 20px;
+    padding: 20px 10px 20px 10px;
+}
+div#list {
+    display: inline-block;
+}
+div#bgimage {
+    opacity: 50%;
+    float: right;
+}
