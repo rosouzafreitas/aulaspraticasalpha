@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+header {
+    background-color: black;
+    color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'American Typewriter', serif;
+    padding-left: 10px;
+    font-style: oblique;
+    font-variant: small-caps;
+    position: sticky;
+    display: inline-block;
+}
+header:hover {
+    color: lightgreen;
+}
+.topnav{
+    padding-left: 0;
+    position: sticky;
+    display: block;
+    background-color: black;
+}
+.topnav a {
+    display: block;
+    float: left;
+    border: 1px solid green;
+    margin-right: 5px;
+}
+.topnav input[type=text] {
+    float: right;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+}
+.topnav input::placeholder {
+    color: green;
+}
+.topnav input[type=submit]{
+    float: right;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+}
+button {
+    margin-left: 0;
+    background: black;
+    color: green;
+    border: 1px solid green;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+}
+button:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+article a {
+    color: white;
+}
+article a:hover {
+    color: hotpink;
+}
+article {
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+    padding: 20px 10px 20px 10px;
+}
+div#list {
+    display: inline-block;
+}
+div#bgimage {
+    opacity: 50%;
+    float: right;
+}
