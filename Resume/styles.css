@@ -95,11 +95,18 @@ article {
     margin-right: 15px;
     width: 40%;
     height: auto;
+    overflow-y: scroll;
+}
+article::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    background-clip: content-box;
 }
 article#sobre div {
     display: block;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     content {
         display: block
     }
@@ -110,11 +117,6 @@ article#sobre div {
         padding: 20px 10px 20px 10px;
         width: auto;
         margin-bottom: 25px;
-    }
-}
-@media only screen and (max-width: 800px) {
-    article {
-        overflow-y: scroll;
     }
 }
 h1 {
