@@ -97,6 +97,7 @@ article {
     width: 40%;
     height: auto;
     overflow-y: scroll;
+    border-radius: 10px;
 }
 article#sobre p {
     margin-bottom: 20px;
