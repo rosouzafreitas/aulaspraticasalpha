@@ -97,9 +97,15 @@ article {
     height: auto;
     overflow-y: scroll;
 }
-article::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
     background-color: #000000;
-    border-radius: 50%;
+    border-radius: 25%;
     border: 6px solid transparent;
     background-clip: content-box;
 }
