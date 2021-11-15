@@ -1,0 +1,118 @@
+* {
+    margin: 0 auto;
+    max-width: 1920px;
+    max-height: 1080px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    width: 100vw;
+    background-color: #DEDEDE;
+}
+header {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 16vh;
+    background-color: #dedede;
+    align-items: center;
+    /*box-shadow: 0px 10px 30px 0px #393E46;*/
+}
+a#menu {
+    text-decoration: none;
+    border: none;
+    margin: none;
+    position: absolute;
+    right: 5%;
+    width: 4vw;
+    height: auto;
+}
+.menuicon {
+    width: 4vw;
+    height: auto;
+}
+header span {
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #606060;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 84vh;
+}
+main section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+a {
+    text-decoration: none;
+}
+main section span {
+    width: 32vw;
+    margin-top: 1vh;
+    text-align: left;
+    color: #9C9C9C;
+    font-weight: bold;
+}
+.leftanchor {
+    width: 32vw;
+    margin-top: 1vh;
+    text-align: left;
+    color: #9C9C9C;
+    font-weight: bold;
+}
+#registerbtn {
+    text-align: center;
+}
+img {
+    width: 16vw;
+    margin-top: 0;
+    margin-bottom: 8vh;
+    height: auto;
+    -webkit-filter: drop-shadow(5px 7px 4px #00000030);
+    filter: drop-shadow(5px 7px 4px #00000030);
+}
+input[type=text], [type=number], [type=email], [type=password] {
+    width: 36vw;
+    height: 11vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 2vw;
+    border: none;
+    border-radius: 50px;
+    border: 1.5px solid #F0BD61;
+    /*box-shadow: 0px 4px 4px 0px #393E46;*/
+}
+:placeholder-shown {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 2vw;
+}
+button {
+    width: 18vw;
+    height: 11vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    margin-bottom: 1vh;
+    border-radius: 50px;
+    background-color: #9C9C9C;
+    color: #FFFFFF;
+    border: 1.5px solid #F0BD61;
+    box-shadow: 0px 4px 4px 0px #393E46;
+}
+button:hover {
+    cursor: pointer;
+}
+button:focus {
+    background-color: #606060;
+    box-shadow: none;
+    cursor: pointer;
+}
