@@ -89,3 +89,6 @@ footer {
     padding-bottom: 5vh;
     background-color: #eaeaea;
 }
+h1 {
+    display: flex;
+}
