@@ -1,0 +1,180 @@
+* {
+    margin: 0 auto;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 15px;
+}
+textarea::-webkit-scrollbar {
+    width: 15px;
+}
+p::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #eaeaea;
+    border-radius: 25%;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+body {
+    background-color: #202020;
+    color: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    background-color: #e79d6c;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    align-items: center;
+    position: relative;
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 2%;
+}
+h2 {
+    position: absolute;
+    right: 2%;
+}
+main {
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 100vw;
+    height: 100vh;
+}
+main section {
+    width: 100vw;
+    background-image: url(src/tapioca.jpg);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+#aero {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 30vw;
+    height: 60vh;
+    background-color: #000000;
+    opacity: 0.5;
+    border-radius: 25px;
+    padding: 2vw;
+}
+#feedback {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 30vw;
+    height: 60vh;
+    background-color: transparent;
+    align-items: center;
+    border-radius: 25px;
+    padding: 2vw;
+}
+h3 {
+    opacity: 1.0;
+    color: #FFFFFF;
+    font-size: 2.4vw;
+    margin-bottom: 2vh;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1vw;
+    width: 20vw;
+    border-radius: 25px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: #FFFFFF;
+    font-size: 1vw;
+    resize: none;
+}
+input:focus, textarea:focus {
+    border: none;
+}
+input:active, textarea:active {
+    border: none;
+}
+input::placeholder, textarea::placeholder {
+    color: #eaeaea;
+    font-size: 1vw;
+}
+#message {
+    height: 20vh;
+}
+input[type=submit] {
+    background-color: #202020;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    cursor: pointer;
+}
+#aero2 {
+    position: absolute;
+    right: -200%;
+    top: 10%;
+    width: 40vw;
+    height: 40vh;
+    background-color: #000000;
+    opacity: 0.5;
+    border-radius: 25px;
+    padding: 2vw;
+    display: flex;
+    transition: right 0.5s;
+}
+#sent {
+    flex-direction: column;
+    position: absolute;
+    right: -200%;
+    top: 10%;
+    width: 40vw;
+    height: 40vh;
+    background-color: transparent;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 2vw;
+    display: flex;
+    transition: right 0.5s;
+}
+p {
+    color: #FFFFFF;
+    font-size: 1vw;
+    line-height: larger;
+    margin-bottom: 2vh;
+    white-space: normal;
+}
+#messagesent {
+    max-height: 20vh;
+}
+footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 6vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:hover {
+    color: #e79d6c;
+}
