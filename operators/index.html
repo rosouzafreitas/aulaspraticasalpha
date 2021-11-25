@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclickForm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            calculator
+        </h1>
+        <h2>
+            Your regular math doer!
+        </h>
+    </header>
+    <main>
+        <section id="gallery">
+            <div id="aero"></div>
+            <div id="feedback">
+                <h3>
+                    simple calculator
+                </h3>
+                <input type="number" id="number1" placeholder="First number" autocomplete="off">
+                <input type="number" id="number2" placeholder="Second number" autocomplete="off">
+                <div id="operators">
+                    <input type="button" value="+" onclick="sum();">
+                    <input type="button" value="-" onclick="subtraction();">
+                    <input type="button" value="/" onclick="division();">
+                    <input type="button" value="x" onclick="multiply();">
+                </div>
+                <input type="submit" value="Calculate!" onclick="submit();">
+            </div>
+            <div id="aero2"></div>
+            <div id="sent">
+                <h3 id="sentfdbck">
+                    Your calculation was:
+                </h3>
+                <p id="sentence"></p>
+                <p id="result"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Rodrigo de Freitas @ 2021 | <a href="https://github.com/rosouzafreitas/aulaspraticasalpha/tree/gh-pages/onclick" target="_blank" rel="noopener noreferrer">See project on GitHub</a></span>
+    </footer>
+</body>
+</html>
