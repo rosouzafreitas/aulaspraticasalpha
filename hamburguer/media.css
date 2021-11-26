@@ -149,7 +149,7 @@
         right: -200%;
         top: 60%;
         width: 86vw;
-        height: 15vh;
+        height: 25vh;
         background-color: #dd5151;
         opacity: 0.8;
         border-radius: 25px;
@@ -163,7 +163,7 @@
         right: -200%;
         top: 60%;
         width: 86vw;
-        height: 15vh;
+        height: 25vh;
         background-color: transparent;
         justify-content: center;
         border-radius: 25px;
@@ -174,15 +174,9 @@
     p {
         color: #FFFFFF;
         font-size: 1.4vh;
-        line-height: larger;
+        line-height: normal;
         margin-bottom: 2vh;
         white-space: normal;
-    }
-    #result {
-        font-size: 1.8vh;
-    }
-    #messagesent {
-        max-height: 20vh;
     }
     footer {
         display: flex;
