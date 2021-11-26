@@ -48,10 +48,10 @@ function submit() {
         value += 3
     } else {
         if (cheese == "cheese2") {
-            document.getElementById("breadchoice").innerHTML = "Queijo prato"
+            document.getElementById("cheesechoice").innerHTML = "Queijo prato"
             value += 3
         } else {
-            document.getElementById("breadchoice").innerHTML = "Queijo cheedar"
+            document.getElementById("cheesechoice").innerHTML = "Queijo cheedar"
             value += 5;
         }
     }
