@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BartsTrick</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="phrase">Selecione abaixo a frase que Bart escreverá:</label>
+        <select id="phrase">
+            <option value="Eu não desperdiçarei giz.">Eu não desperdiçarei giz.</option>
+            <option value="Eu não andarei de skate nos corredores.">Eu não andarei de skate nos corredores.</option>
+            <option value="Eu não arrotarei na aula.">Eu não arrotarei na aula.</option>
+            <option value="Eu não instigarei revoluções.">Eu não instigarei revoluções.</option>
+            <option value="Eu não vou desenhar mulheres nuas na sala de aula.">Eu não vou desenhar mulheres nuas na sala de aula.</option>
+            <option value="Eu não vi Elvis.">Eu não vi Elvis.</option>
+            <option value="Eu não chamarei minha professora de Bolo Quente.">Eu não chamarei minha professora de Bolo Quente.</option>
+            <option value="Chiclete de alho não é engraçado.">Chiclete de alho não é engraçado.</option>
+            <option value="Eles estão rindo de mim, e não comigo.">Eles estão rindo de mim, e não comigo.</option>
+            <option value="Eu não gritarei “Fogo” em uma sala de aula cheia.">Eu não gritarei “Fogo” em uma sala de aula cheia.</option>
+        </select>
+        <label for="reps">Selecione o número de vezes que ele escreverá a frase:</label>
+        <input type="number" value="1" min="1" max="11" id="reps" onkeydown="return false">
+        <input type="button" value="Escrever" id="writebtn" onclick="writePhrase();">
+    </form>
+    <div id="blackboard">
+    </div>
+    <div id="counters">
+        <div id="counter1">
+            <span class="countertxt">O número de vezes que o quadro precisou ser apagado foi de:</span>
+            <span id="erases">-1</span>
+            <span id="counterlabel1">vezes</span>
+        </div>
+        <div id="counter 2">
+            <span class="countertxt">O número de linhas escritas na última iteração foi de:</span>
+            <span id="lastlncount"></span>
+            <span id="counterlabel2">linhas</span>
+        </div>
+    </div>
+</body>
+</html>
