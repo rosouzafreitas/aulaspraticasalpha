@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y: hidden;
 }
 form {
     display: flex;
@@ -17,30 +18,31 @@ select {
     margin-top: 1vh;
     margin-bottom: 1vh;
     height: 5vh;
-    font-size: 20px;
+    font-size: 2vh;
     border-radius: 15px;
     background-color: #dedede;
 }
 input {
     height: 4vh;
     width: 10vw;
-    font-size: 20px;
+    font-size: 2vh;
     margin-top: 1vh;
     margin-bottom: 0.2vh;
     border-radius: 15px;
     background-color: #dedede;
 }
 label {
-    font-size: 20px;
+    font-size: 2vh;
 }
 #blackboard {
+    flex-direction: row;
     background-color: #202020;
     border: 15px solid #3f200b;
     width: 50vw;
     height: 45vh;
     padding: 1vh;
     font-family: 'Caveat';
-    font-size: 30px;
+    font-size: 3vh;
 }
 p {
     letter-spacing: 4px;
@@ -52,11 +54,11 @@ p {
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    font-size: 26px;
+    font-size: 3vh;
     font-weight: bold;
 }
 .countertxt {
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: normal;
 }
 #counter1, #counter2 {
