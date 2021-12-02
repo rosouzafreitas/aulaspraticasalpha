@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSArrays</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Insira abaixo 4 números</h1>
+        <h4>Se decimais, utilize ponto <br /> ao invés de vírgula</h4>
+        <form>
+            <input type="number" id="field1">
+            <input type="number" id="field2">
+            <input type="number" id="field3">
+            <input type="number" id="field4">
+        </form>
+        <div id="buttons">
+            <button id="button1" onclick="storeValues();">Armazenar valores</button>
+            <button id="button2" onclick="(new storeValues()).invertValues();">Inverter valores</button>
+            <button id="button3" onclick="(new storeValues()).orderUp();">Ordem crescente</button>
+            <button id="button4" onclick="(new storeValues()).orderDown();">Ordem decrescente</button>
+        </div>
+        <div id="numbersdiv"></div>
+    </main>
+    <footer>
+        <span>
+            Rodrigo de Freitas @ 2021 @ <a href="https://github.com/rosouzafreitas/aulaspraticasalpha/tree/gh-pages/JSArrays" target="_blank" rel="noopener noreferrer">Veja o projeto no GitHub</a>
+        </span>
+    </footer>
+</body>
+</html>
