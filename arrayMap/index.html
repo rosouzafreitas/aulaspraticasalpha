@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas da Joana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form>
+        <section>
+            <div>
+                <label for="clientname">Insert client name:</label>
+                <input type="text" id="clientname">
+            </div>
+            <div>
+                <label for="selldate">Insert expiration date:</label>
+                <input type="date" id="selldate">
+            </div>
+            <div>
+                <label for="price">Insert the value of the bill:</label>
+                <span class="textbox"> 
+                    USD
+                    <input type="number" step="0.1" id="price" autofocus>
+                </span>
+            </div>
+        </section>
+        <section>
+        <input type="reset" value="Store values" onclick="storeData();">
+        <input type="button" value="Calculate fees" onclick="calculateFee();">
+        <input type="button" value="Reset table" onclick="resetTable();">
+        </section>
+    </form>
+    <table id="stored">
+        <tr>
+            <td>Client</td>
+            <td>Expiration Date</td>
+            <td>Expired</td>
+            <td>Value</td>
+            <td>Fees TBC</td>
+        </tr>
+    </table>
+</body>
+</html>
