@@ -1,0 +1,9 @@
+body {font-family: Helvetica, sans-serif; font-size: 16px; background-color: #202020; color: #dedede; margin: 0 auto;}
+
+section {display: flex; background-color: #606060; color: #eaeaea;}
+
+p {width: 50vw; line-height: 20px;}
+
+div {width: 50vw; height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+
+button {font-size: 24px; width: 18vw;}
