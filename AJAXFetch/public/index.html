@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAXFetch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="writeData()">
+    <form id="mainform">
+        <section>
+            <div>
+                <label for="clientid">Seach by client ID:</label>
+                <input type="text" id="clientid">
+            </div>
+            <div>
+                <label for="clientname">Search by name:</label>
+                <input type="text" onkeydown="fetchData()" id="clientname">
+            </div>
+            <div>
+                <label for="clientmail">Search by e-mail:</label>
+                <input type="text" onkeydown="fetchData()" id="clientmail">
+            </div>
+        </section>
+        <section>
+        <input type="button" value="Search database" onclick="fetchData();">
+        </section>
+    </form>
+    <table id="stored">
+    </table>
+</body>
+</html>
