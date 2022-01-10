@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 app.get('/', function(req,res){
-    app.use(express.static('public'))
+    app.use(express.static('public'));
+    res.redirect('/index.html');
     return false
 });
 
