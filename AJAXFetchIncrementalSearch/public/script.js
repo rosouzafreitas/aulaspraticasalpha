@@ -64,10 +64,8 @@ function fetchData () {
       .catch(err => {
         console.log("Deu ruim boy")
       })
-    clearTimeout(myTimeout)
   }
   else {
     writeData();
-    clearTimeout(myTimeout)
   }
 }
