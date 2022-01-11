@@ -6,7 +6,6 @@ function writeData () {
         return response.json();
       })
       .then(data => {
-        console.log(data)
         while (resultsTable.hasChildNodes()) {
           resultsTable.removeChild(resultsTable.lastChild)
         }
@@ -27,21 +26,14 @@ function writeData () {
 }
 
 function timeOutSearch () {
-  const myTimeout = setTimeout(fetchData, 2000)
-}
+  let myTimeout = setTimeout(function fetchData() {
 
-function fetchData () {
   const search_value = document.getElementById('search_value').value;
   const search_type = document.getElementById('search_type').value;
-/*
-  if (client_id == "") {client_id = "none"}
-  if (client_name == "" || client_name.length < 2) {client_name = "none"}
-  if (client_mail == "" || client_mail.length < 2) {client_mail = "none"}
 
-  console.log(client_id, client_name, client_mail)
-*/
   if (search_value.length >= 3 || (search_type == "id" & search_value.length > 0)) {
-  fetch(`http://localhost:8080/test?${search_type}=${search_value}`)
+    let fetchTimeout = setTimeout(function () {
+      fetch(`http://localhost:8080/test?${search_type}=${search_value}`)
       .then(response => {
         return response.json();
       })
@@ -64,8 +56,12 @@ function fetchData () {
       .catch(err => {
         console.log("Deu ruim boy")
       })
+    }, 2000)
+  
   }
   else {
+    clearTimeout(myTimeout)
     writeData();
   }
+  }, 25)
 }
