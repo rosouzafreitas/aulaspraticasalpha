@@ -54,7 +54,8 @@ function timeOutSearch () {
         }
       })
       .catch(err => {
-        console.log("Deu ruim boy")
+        console.log("Deu ruim boy");
+        clearTimeout(fetchTimeout);
       })
     }, 2000)
   
