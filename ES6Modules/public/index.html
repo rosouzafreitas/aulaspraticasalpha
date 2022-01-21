@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6Modules</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="writeData()">
+    <form id="mainform">
+        <section>
+            <div>
+                <label for="search_value">Enter search value:</label>
+                <input type="text" onkeydown="timeOutSearch();" id="search_value">
+            </div>
+            <div>
+                <label for="clientname">Search:</label>
+                <select name="search_type" id="search_type">
+                    <option value="anniversary">By anniversary month</option>
+                    <option value="sector">By sector</option>
+                    <option value="branch">By branch</option>
+                </select>
+            </div>
+        </section>
+    </form>
+    <table id="stored">
+    </table>
+</body>
+</html>
