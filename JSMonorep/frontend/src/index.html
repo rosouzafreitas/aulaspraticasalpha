@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoRepository</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="writeData()">
+    <form id="mainform">
+        <section>
+            <div>
+                <label for="search_value">Enter search value:</label>
+                <input type="text" onkeydown="timeOutSearch();" id="search_value">
+            </div>
+            <div>
+                <label for="clientname">Search:</label>
+                <select name="search_type" id="search_type">
+                    <option value="anniversary">By anniversary month</option>
+                    <option value="sector">By sector</option>
+                    <option value="branch">By branch</option>
+                </select>
+            </div>
+            <div>
+                <label for="form_button">Add employee</label>
+                <input type="button" id="form_button" value="Show/Hide form" onclick="showForm()">
+            </div>
+        </section>
+    </form>
+    <form id="add_form">
+        <h3>Add employee</h3>
+        <section>
+            <div>
+                <label for="form_matricule">Matricule</label>
+                <input type="text" id="form_matricule">
+            </div>
+            <div>
+                <label for="form_name">Name</label>
+                <input type="text" id="form_name">
+            </div>
+            <div>
+                <label for="form_branch">Branch</label>
+                <input type="text" id="form_branch">
+            </div>
+            <div>
+                <label for="form_mail">E-mail</label>
+                <input type="email" id="form_mail">
+            </div>
+            <div>
+                <label for="form_sector">Sector</label>
+                <input type="text" id="form_sector">
+            </div>
+            <div>
+                <label for="form_anniversary">Birth Month</label>
+                <input type="text" id="form_anniversary">
+            </div>
+            <div>
+                <label for="form_button">Finish</label>
+                <input type="button" id="form_button" value="Send to database" onclick="addTo()">
+            </div>
+        </section>
+    </form>
+    <table id="stored">
+    </table>
+</body>
+</html>
