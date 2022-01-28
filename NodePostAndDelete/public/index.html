@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAXFetch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="writeData()">
+    <form id="mainform">
+        <section>
+            <div>
+                <label for="search_value">Enter search value:</label>
+                <input type="text" onkeydown="timeOutSearch();" id="search_value">
+            </div>
+            <div>
+                <label for="clientname">Search:</label>
+                <select name="search_type" id="search_type">
+                    <option value="id">By ID</option>
+                    <option value="name">By name</option>
+                    <option value="mail">By e-mail</option>
+                </select>
+            </div>
+            <div>
+                <label for="showformbtn">Add/Remove user</label>
+                <input type="button" onclick="showForm();" id="showformbtn" value="Show/Hide Form">
+            </div>
+        </section>
+        <section id="addform">
+            <div>
+                <label for="new_id">Enter ID:</label>
+                <input type="number" onkeydown="timeOutSearch();" id="new_id">
+            </div>
+            <div>
+                <label for="new_name">Enter name:</label>
+                <input type="text" onkeydown="timeOutSearch();" id="new_name">
+            </div>
+            <div>
+                <label for="new_mail">Enter e-mail:</label>
+                <input type="email" onkeydown="timeOutSearch();" id="new_mail">
+            </div>
+            <div>
+                <input type="button" onclick="postUser();" id="postbtn" value="Add user">
+            </div>
+        </section>
+        <section id="deleteform">
+            <div>
+                <label for="del_id">Enter ID:</label>
+                <input type="number" onkeydown="timeOutSearch();" id="del_id">
+            </div>
+            <div>
+                <input type="button" onclick="deleteUser();" id="deletebtn" value="Remove user">
+            </div>
+        </section>
+    </form>
+    <table id="stored">
+    </table>
+</body>
+</html>
