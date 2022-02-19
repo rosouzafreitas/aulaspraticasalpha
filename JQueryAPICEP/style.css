@@ -1,0 +1,46 @@
+* {
+    margin: 0 auto;
+}
+body {
+    display: flex;
+    background-color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width: 90vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+main section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+h1 {
+    font-size: 3rem;
+}
+input {
+    margin-top: 2vh;
+}
+input[type=text] {
+    padding: 8px;
+    font-size: 1.4rem;
+}
+input[type=button] {
+    padding: 4px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    margin: 2px solid black;
+}
+input[type=button]:hover {
+    cursor: pointer;
+}
+p {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+}
+iframe {
+    margin-top: 2vh;
+}
